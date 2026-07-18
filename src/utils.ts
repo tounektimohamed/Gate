@@ -93,6 +93,13 @@ export function formatDuration(minutes: number): string {
 
 export const DEMO_USERS = [
   {
+    email: 'tounekti17@gmail.com',
+    password: 'sahbirahma',
+    name: 'المدير العام',
+    role: 'admin' as const,
+    phone: '0500000000'
+  },
+  {
     email: 'gatekeeper@camp.com',
     password: 'password123',
     name: 'أحمد البواب',

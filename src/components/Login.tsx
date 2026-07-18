@@ -290,29 +290,6 @@ export default function Login({ onLoginSuccess }: LoginProps) {
             </div>
           </form>
 
-          {/* Quick Demo Login Option */}
-          <div className="mt-8 pt-6 border-t border-slate-700/60">
-            <div className="text-center mb-4">
-              <span className="px-3 py-1 text-xs font-semibold tracking-wider text-slate-400 bg-slate-900 rounded-full uppercase">
-                تجربة الدخول السريع للتقييم
-              </span>
-            </div>
-            <div className="grid grid-cols-2 gap-2">
-              {DEMO_USERS.map((user) => (
-                <button
-                  key={user.email}
-                  onClick={() => selectDemoUser(user)}
-                  className="flex flex-col items-center justify-center p-2 rounded-xl bg-slate-900 border border-slate-750 hover:bg-slate-750 transition-all text-right w-full"
-                >
-                  <span className="text-xs font-bold text-slate-100">{user.name}</span>
-                  <span className={`text-[10px] px-1.5 py-0.5 rounded-full border mt-1 font-medium ${getRoleBadgeColor(user.role)}`}>
-                    {getRoleNameArabic(user.role)}
-                  </span>
-                </button>
-              ))}
-            </div>
-          </div>
-
           {/* Database Empty Seeding Options */}
           {(showSeedButton || seeding) && (
             <div className="mt-6 pt-4 border-t border-slate-700/60">
