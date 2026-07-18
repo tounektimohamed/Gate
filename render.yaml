@@ -4,7 +4,7 @@ services:
     name: scouts-camp-dashboard
     env: static
     buildCommand: npm install && npm run build
-    publishPath: dist
+    staticPublishPath: dist
     routes:
       # Rewrite all requests to index.html for React SPA routing
       - type: rewrite
