@@ -1,0 +1,6 @@
+{
+  "name": "Gate Control System",
+  "description": "نظام ويب لإدارة دخول وخروج الأفراد والزوار داخل المخيم الكشفي الصيفي مع تحديثات لحظية وإدارة الصلاحيات والوحدات.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

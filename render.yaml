@@ -1,0 +1,12 @@
+# Render Blueprint configuration for Vite React SPA
+services:
+  - type: web
+    name: scouts-camp-dashboard
+    env: static
+    buildCommand: npm install && npm run build
+    publishPath: dist
+    routes:
+      # Rewrite all requests to index.html for React SPA routing
+      - type: rewrite
+        source: /*
+        destination: /index.html
